@@ -26,16 +26,16 @@
 }
 
 -(NSArray *)setUpVCs {
-    HomeController * home = [[HomeController alloc] init];
+    HomeController * home = [HomeController instance];
     WMNavgationController * homeNav = [[WMNavgationController alloc] initWithRootViewController:home];
     
     OtherController * other = [OtherController instance];
-    WMNavgationController * otherNav = [[WMNavgationController alloc] initWithRootViewController:other];
+    WMNavgationController *otherNav = [[WMNavgationController alloc] initWithRootViewController:other];
 
     MineController * mine = [MineController instance];
     WMNavgationController * mineNav = [[WMNavgationController alloc] initWithRootViewController:mine];
     
-    return @[homeNav,mine,other];
+    return @[homeNav,otherNav,mineNav];
 }
 
 @end

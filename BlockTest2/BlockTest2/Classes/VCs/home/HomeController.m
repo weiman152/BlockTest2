@@ -20,8 +20,7 @@
 }
 
 +(instancetype)instance {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Home" bundle:0];
-    HomeController *home = [storyboard instantiateViewControllerWithIdentifier:@"HomeController"];
+    HomeController *home = [HomeController instanceWithBoard:@"Home" identifer:@"HomeController"];
     return home;
 }
 

@@ -20,8 +20,7 @@
 }
 
 +(instancetype)instance {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"other" bundle:0];
-    OtherController *other = [storyboard instantiateViewControllerWithIdentifier:@"OtherController"];
+    OtherController *other = [OtherController instanceWithBoard:@"other" identifer:@"OtherController"];
     return other;
 }
 

@@ -21,6 +21,7 @@
 		3B8E5A42250EFCB10063567F /* mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A41250EFCB10063567F /* mine.storyboard */; };
 		3B8E5A44250EFCBC0063567F /* other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A43250EFCBC0063567F /* other.storyboard */; };
 		3B8E5A47250EFE8C0063567F /* SceneDelegate+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */; };
+		3BBC280C250FAA5500F696F4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC280B250FAA5500F696F4 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		3B8E5A43250EFCBC0063567F /* other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = other.storyboard; sourceTree = "<group>"; };
 		3B8E5A45250EFE8C0063567F /* SceneDelegate+Setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneDelegate+Setup.h"; sourceTree = "<group>"; };
 		3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SceneDelegate+Setup.m"; sourceTree = "<group>"; };
+		3BBC280A250FAA5500F696F4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3BBC280B250FAA5500F696F4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				3B8E5A28250EFB550063567F /* WMTabbarController.m */,
 				3B8E5A2A250EFB7D0063567F /* WMNavgationController.h */,
 				3B8E5A2B250EFB7D0063567F /* WMNavgationController.m */,
+				3BBC280A250FAA5500F696F4 /* BaseViewController.h */,
+				3BBC280B250FAA5500F696F4 /* BaseViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E5A26250EFA550063567F /* AppDelegate.m in Sources */,
+				3BBC280C250FAA5500F696F4 /* BaseViewController.m in Sources */,
 				3B8E5A25250EFA550063567F /* SceneDelegate.m in Sources */,
 				3B8E5A38250EFC230063567F /* OtherController.m in Sources */,
 				3B8E5A2C250EFB7D0063567F /* WMNavgationController.m in Sources */,

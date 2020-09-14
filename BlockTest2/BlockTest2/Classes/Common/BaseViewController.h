@@ -1,5 +1,5 @@
 //
-//  HomeController.h
+//  BaseViewController.h
 //  BlockTest2
 //
 //  Created by wenhuanhuan on 2020/9/14.
@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeController : BaseViewController
+@interface BaseViewController : UIViewController
 
-+(instancetype)instance;
++(id)instanceWithBoard:(NSString *)name identifer:(NSString *)identifer;
 
 @end
 
