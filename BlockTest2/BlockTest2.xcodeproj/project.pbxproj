@@ -7,28 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B8E5A01250EF6030063567F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A00250EF6030063567F /* AppDelegate.m */; };
-		3B8E5A04250EF6030063567F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A03250EF6030063567F /* SceneDelegate.m */; };
-		3B8E5A07250EF6030063567F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A06250EF6030063567F /* ViewController.m */; };
-		3B8E5A0A250EF6030063567F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A08250EF6030063567F /* Main.storyboard */; };
 		3B8E5A0C250EF6040063567F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A0B250EF6040063567F /* Assets.xcassets */; };
 		3B8E5A0F250EF6040063567F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A0D250EF6040063567F /* LaunchScreen.storyboard */; };
 		3B8E5A12250EF6040063567F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A11250EF6040063567F /* main.m */; };
+		3B8E5A25250EFA550063567F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A21250EFA550063567F /* SceneDelegate.m */; };
+		3B8E5A26250EFA550063567F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A22250EFA550063567F /* AppDelegate.m */; };
+		3B8E5A29250EFB550063567F /* WMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A28250EFB550063567F /* WMTabbarController.m */; };
+		3B8E5A2C250EFB7D0063567F /* WMNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A2B250EFB7D0063567F /* WMNavgationController.m */; };
+		3B8E5A32250EFC000063567F /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A31250EFC000063567F /* HomeController.m */; };
+		3B8E5A35250EFC130063567F /* MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A34250EFC130063567F /* MineController.m */; };
+		3B8E5A38250EFC230063567F /* OtherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A37250EFC230063567F /* OtherController.m */; };
+		3B8E5A40250EFCA10063567F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A3F250EFCA10063567F /* Home.storyboard */; };
+		3B8E5A42250EFCB10063567F /* mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A41250EFCB10063567F /* mine.storyboard */; };
+		3B8E5A44250EFCBC0063567F /* other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A43250EFCBC0063567F /* other.storyboard */; };
+		3B8E5A47250EFE8C0063567F /* SceneDelegate+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B8E59FC250EF6030063567F /* BlockTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B8E59FF250EF6030063567F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3B8E5A00250EF6030063567F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B8E5A02250EF6030063567F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		3B8E5A03250EF6030063567F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3B8E5A05250EF6030063567F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B8E5A06250EF6030063567F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3B8E5A09250EF6030063567F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B8E59FC250EF6030063567F /* Block测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Block测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8E5A0B250EF6040063567F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8E5A0E250EF6040063567F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8E5A10250EF6040063567F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B8E5A11250EF6040063567F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B8E5A20250EFA550063567F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B8E5A21250EFA550063567F /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3B8E5A22250EFA550063567F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B8E5A23250EFA550063567F /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3B8E5A27250EFB550063567F /* WMTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTabbarController.h; sourceTree = "<group>"; };
+		3B8E5A28250EFB550063567F /* WMTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTabbarController.m; sourceTree = "<group>"; };
+		3B8E5A2A250EFB7D0063567F /* WMNavgationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMNavgationController.h; sourceTree = "<group>"; };
+		3B8E5A2B250EFB7D0063567F /* WMNavgationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMNavgationController.m; sourceTree = "<group>"; };
+		3B8E5A30250EFC000063567F /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		3B8E5A31250EFC000063567F /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		3B8E5A33250EFC130063567F /* MineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineController.h; sourceTree = "<group>"; };
+		3B8E5A34250EFC130063567F /* MineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineController.m; sourceTree = "<group>"; };
+		3B8E5A36250EFC230063567F /* OtherController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherController.h; sourceTree = "<group>"; };
+		3B8E5A37250EFC230063567F /* OtherController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherController.m; sourceTree = "<group>"; };
+		3B8E5A3F250EFCA10063567F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3B8E5A41250EFCB10063567F /* mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mine.storyboard; sourceTree = "<group>"; };
+		3B8E5A43250EFCBC0063567F /* other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = other.storyboard; sourceTree = "<group>"; };
+		3B8E5A45250EFE8C0063567F /* SceneDelegate+Setup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneDelegate+Setup.h"; sourceTree = "<group>"; };
+		3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SceneDelegate+Setup.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +72,7 @@
 		3B8E59FD250EF6030063567F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B8E59FC250EF6030063567F /* BlockTest2.app */,
+				3B8E59FC250EF6030063567F /* Block测试.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,19 +80,151 @@
 		3B8E59FE250EF6030063567F /* BlockTest2 */ = {
 			isa = PBXGroup;
 			children = (
-				3B8E59FF250EF6030063567F /* AppDelegate.h */,
-				3B8E5A00250EF6030063567F /* AppDelegate.m */,
-				3B8E5A02250EF6030063567F /* SceneDelegate.h */,
-				3B8E5A03250EF6030063567F /* SceneDelegate.m */,
-				3B8E5A05250EF6030063567F /* ViewController.h */,
-				3B8E5A06250EF6030063567F /* ViewController.m */,
-				3B8E5A08250EF6030063567F /* Main.storyboard */,
+				3B8E5A18250EFA550063567F /* Classes */,
 				3B8E5A0B250EF6040063567F /* Assets.xcassets */,
 				3B8E5A0D250EF6040063567F /* LaunchScreen.storyboard */,
 				3B8E5A10250EF6040063567F /* Info.plist */,
 				3B8E5A11250EF6040063567F /* main.m */,
 			);
 			path = BlockTest2;
+			sourceTree = "<group>";
+		};
+		3B8E5A18250EFA550063567F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A1A250EFA550063567F /* Common */,
+				3B8E5A19250EFA550063567F /* Models */,
+				3B8E5A1B250EFA550063567F /* VCs */,
+				3B8E5A1E250EFA550063567F /* Views */,
+				3B8E5A1F250EFA550063567F /* SupportFiles */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B8E5A19250EFA550063567F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A3D250EFC7E0063567F /* home */,
+				3B8E5A3E250EFC7E0063567F /* mine */,
+				3B8E5A3C250EFC7E0063567F /* other */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B8E5A1A250EFA550063567F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A27250EFB550063567F /* WMTabbarController.h */,
+				3B8E5A28250EFB550063567F /* WMTabbarController.m */,
+				3B8E5A2A250EFB7D0063567F /* WMNavgationController.h */,
+				3B8E5A2B250EFB7D0063567F /* WMNavgationController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3B8E5A1B250EFA550063567F /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A2F250EFBE50063567F /* home */,
+				3B8E5A2E250EFBE50063567F /* mine */,
+				3B8E5A2D250EFBE50063567F /* other */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		3B8E5A1E250EFA550063567F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A3A250EFC700063567F /* home */,
+				3B8E5A3B250EFC700063567F /* mine */,
+				3B8E5A39250EFC700063567F /* other */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B8E5A1F250EFA550063567F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A20250EFA550063567F /* AppDelegate.h */,
+				3B8E5A22250EFA550063567F /* AppDelegate.m */,
+				3B8E5A23250EFA550063567F /* SceneDelegate.h */,
+				3B8E5A21250EFA550063567F /* SceneDelegate.m */,
+				3B8E5A45250EFE8C0063567F /* SceneDelegate+Setup.h */,
+				3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		3B8E5A2D250EFBE50063567F /* other */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A36250EFC230063567F /* OtherController.h */,
+				3B8E5A37250EFC230063567F /* OtherController.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		3B8E5A2E250EFBE50063567F /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A33250EFC130063567F /* MineController.h */,
+				3B8E5A34250EFC130063567F /* MineController.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		3B8E5A2F250EFBE50063567F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A30250EFC000063567F /* HomeController.h */,
+				3B8E5A31250EFC000063567F /* HomeController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		3B8E5A39250EFC700063567F /* other */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A43250EFCBC0063567F /* other.storyboard */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		3B8E5A3A250EFC700063567F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A3F250EFCA10063567F /* Home.storyboard */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		3B8E5A3B250EFC700063567F /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E5A41250EFCB10063567F /* mine.storyboard */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		3B8E5A3C250EFC7E0063567F /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		3B8E5A3D250EFC7E0063567F /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		3B8E5A3E250EFC7E0063567F /* mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +244,7 @@
 			);
 			name = BlockTest2;
 			productName = BlockTest2;
-			productReference = 3B8E59FC250EF6030063567F /* BlockTest2.app */;
+			productReference = 3B8E59FC250EF6030063567F /* Block测试.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E5A0F250EF6040063567F /* LaunchScreen.storyboard in Resources */,
+				3B8E5A44250EFCBC0063567F /* other.storyboard in Resources */,
+				3B8E5A40250EFCA10063567F /* Home.storyboard in Resources */,
 				3B8E5A0C250EF6040063567F /* Assets.xcassets in Resources */,
-				3B8E5A0A250EF6030063567F /* Main.storyboard in Resources */,
+				3B8E5A42250EFCB10063567F /* mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,24 +299,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8E5A07250EF6030063567F /* ViewController.m in Sources */,
-				3B8E5A01250EF6030063567F /* AppDelegate.m in Sources */,
+				3B8E5A26250EFA550063567F /* AppDelegate.m in Sources */,
+				3B8E5A25250EFA550063567F /* SceneDelegate.m in Sources */,
+				3B8E5A38250EFC230063567F /* OtherController.m in Sources */,
+				3B8E5A2C250EFB7D0063567F /* WMNavgationController.m in Sources */,
+				3B8E5A29250EFB550063567F /* WMTabbarController.m in Sources */,
+				3B8E5A32250EFC000063567F /* HomeController.m in Sources */,
+				3B8E5A47250EFE8C0063567F /* SceneDelegate+Setup.m in Sources */,
 				3B8E5A12250EF6040063567F /* main.m in Sources */,
-				3B8E5A04250EF6030063567F /* SceneDelegate.m in Sources */,
+				3B8E5A35250EFC130063567F /* MineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3B8E5A08250EF6030063567F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B8E5A09250EF6030063567F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3B8E5A0D250EF6040063567F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,15 +439,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlockTest2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weiman.BlockTest2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiman.BlockTest;
+				PRODUCT_NAME = "Block测试";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,15 +457,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BlockTest2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weiman.BlockTest2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weiman.BlockTest;
+				PRODUCT_NAME = "Block测试";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

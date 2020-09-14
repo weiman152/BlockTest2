@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeController.h
 //  BlockTest2
 //
 //  Created by wenhuanhuan on 2020/9/14.
@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface HomeController : UIViewController
+
++(instancetype)instance;
 
 @end
 
+NS_ASSUME_NONNULL_END
