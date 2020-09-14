@@ -35,7 +35,7 @@
     MineController * mine = [MineController instance];
     WMNavgationController * mineNav = [[WMNavgationController alloc] initWithRootViewController:mine];
     
-    return @[homeNav,otherNav,mineNav];
+    return @[homeNav,mine,other];
 }
 
 @end

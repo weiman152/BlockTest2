@@ -20,7 +20,7 @@
 }
 
 +(instancetype)instance {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"mine" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"mine" bundle:0];
     MineController *mine = [storyboard instantiateViewControllerWithIdentifier:@"MineController"];
     return mine;
 }
