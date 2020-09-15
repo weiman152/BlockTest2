@@ -35,6 +35,8 @@
     MineController * mine = [MineController instance];
     WMNavgationController * mineNav = [[WMNavgationController alloc] initWithRootViewController:mine];
     
+    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    
     return @[homeNav,otherNav,mineNav];
 }
 

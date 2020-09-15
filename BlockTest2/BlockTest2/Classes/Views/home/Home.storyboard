@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1J1-GG-v2C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1J1-GG-v2C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,15 +15,181 @@
                     <view key="view" contentMode="scaleToFill" id="TwL-h7-TuZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block的几种用法：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVY-98-JLb">
+                                <rect key="frame" x="30" y="64" width="138" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8Z-QD-xqy">
+                                <rect key="frame" x="30" y="113.5" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Min-C8-sm6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="作为局部变量"/>
+                                <connections>
+                                    <action selector="jubuAction:" destination="1J1-GG-v2C" eventType="touchUpInside" id="o6R-px-S4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ts-r0-CQp">
+                                <rect key="frame" x="30" y="177.5" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jO4-Ib-j8g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="作为全局变量"/>
+                                <connections>
+                                    <action selector="quanjuAction:" destination="1J1-GG-v2C" eventType="touchUpInside" id="ioU-B6-xdI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Has-gL-hIy">
+                                <rect key="frame" x="30" y="241.5" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1dU-SC-ue5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="作为函数参数"/>
+                                <connections>
+                                    <action selector="canshuAction:" destination="1J1-GG-v2C" eventType="touchUpInside" id="xcH-ya-T52"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeA-Ib-dwA">
+                                <rect key="frame" x="30" y="305.5" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bjy-6E-h83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="作为返回值"/>
+                                <connections>
+                                    <action selector="fanhuiAction:" destination="1J1-GG-v2C" eventType="touchUpInside" id="dOd-RF-zXG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-Dm-NU0">
+                                <rect key="frame" x="30" y="369.5" width="354" height="44"/>
+                                <color key="backgroundColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Si9-U9-Kpw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Block中使用局部变量和全局变量"/>
+                                <connections>
+                                    <action selector="userAction:" destination="1J1-GG-v2C" eventType="touchUpInside" id="lla-YY-En5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xVY-98-JLb" firstAttribute="top" secondItem="Gta-NA-JvO" secondAttribute="top" constant="20" id="0N7-2D-14f"/>
+                            <constraint firstItem="Gta-NA-JvO" firstAttribute="trailing" secondItem="N8Z-QD-xqy" secondAttribute="trailing" constant="30" id="1ye-9e-erX"/>
+                            <constraint firstItem="DeA-Ib-dwA" firstAttribute="leading" secondItem="Has-gL-hIy" secondAttribute="leading" id="6U7-T9-fe5"/>
+                            <constraint firstItem="DeA-Ib-dwA" firstAttribute="trailing" secondItem="Has-gL-hIy" secondAttribute="trailing" id="9fI-OY-XMz"/>
+                            <constraint firstItem="Has-gL-hIy" firstAttribute="top" secondItem="0Ts-r0-CQp" secondAttribute="bottom" constant="20" id="EcW-ff-DmM"/>
+                            <constraint firstItem="0Ts-r0-CQp" firstAttribute="leading" secondItem="N8Z-QD-xqy" secondAttribute="leading" id="ErI-OJ-BE7"/>
+                            <constraint firstItem="Has-gL-hIy" firstAttribute="leading" secondItem="0Ts-r0-CQp" secondAttribute="leading" id="FTE-LF-Y4D"/>
+                            <constraint firstItem="0Ts-r0-CQp" firstAttribute="trailing" secondItem="N8Z-QD-xqy" secondAttribute="trailing" id="eu3-ZP-MEm"/>
+                            <constraint firstItem="e6Y-Dm-NU0" firstAttribute="leading" secondItem="DeA-Ib-dwA" secondAttribute="leading" id="fSm-u6-SFb"/>
+                            <constraint firstItem="e6Y-Dm-NU0" firstAttribute="trailing" secondItem="DeA-Ib-dwA" secondAttribute="trailing" id="fY0-EK-Ft4"/>
+                            <constraint firstItem="N8Z-QD-xqy" firstAttribute="leading" secondItem="Gta-NA-JvO" secondAttribute="leading" constant="30" id="hvo-gm-niY"/>
+                            <constraint firstItem="N8Z-QD-xqy" firstAttribute="top" secondItem="xVY-98-JLb" secondAttribute="bottom" constant="30" id="iob-Cf-9Og"/>
+                            <constraint firstItem="e6Y-Dm-NU0" firstAttribute="top" secondItem="DeA-Ib-dwA" secondAttribute="bottom" constant="20" id="ktg-Zi-WCX"/>
+                            <constraint firstItem="DeA-Ib-dwA" firstAttribute="top" secondItem="Has-gL-hIy" secondAttribute="bottom" constant="20" id="kwr-21-uN3"/>
+                            <constraint firstItem="0Ts-r0-CQp" firstAttribute="top" secondItem="N8Z-QD-xqy" secondAttribute="bottom" constant="20" id="sRM-2x-LRP"/>
+                            <constraint firstItem="Has-gL-hIy" firstAttribute="trailing" secondItem="0Ts-r0-CQp" secondAttribute="trailing" id="xsc-hk-4wW"/>
+                            <constraint firstItem="xVY-98-JLb" firstAttribute="leading" secondItem="Gta-NA-JvO" secondAttribute="leading" constant="30" id="zhn-2w-Zfa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gta-NA-JvO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首页" id="3bG-zl-cld"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="home_normal" selectedImage="home_select" id="3bG-zl-cld"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfx-mx-EcE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="73"/>
+            <point key="canvasLocation" x="121.73913043478262" y="72.991071428571431"/>
+        </scene>
+        <!--作为局部变量-->
+        <scene sceneID="rJw-ZU-3FO">
+            <objects>
+                <viewController storyboardIdentifier="JubuController" title="作为局部变量" id="bff-zb-ZMg" customClass="JubuController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E10-mQ-adX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YFq-CL-7HZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeA-cK-g6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="73"/>
+        </scene>
+        <!--作为全局变量-->
+        <scene sceneID="dJ3-lt-bl3">
+            <objects>
+                <viewController storyboardIdentifier="QuanjuController" title="作为全局变量" id="kPJ-yY-o0o" customClass="QuanjuController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Srk-xP-CrX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="erU-6s-Ece"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQq-P7-f3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="73"/>
+        </scene>
+        <!--作为参数-->
+        <scene sceneID="Dtm-NX-08T">
+            <objects>
+                <viewController storyboardIdentifier="CanshuController" title="作为参数" id="7WA-he-igj" customClass="CanshuController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ob-l7-Nfl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7cc-ee-kYF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9La-3W-e8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2304" y="73"/>
+        </scene>
+        <!--作为返回值-->
+        <scene sceneID="pLB-Wo-amb">
+            <objects>
+                <viewController storyboardIdentifier="FanhuizhiController" title="作为返回值" id="QmH-1y-X08" customClass="FanhuizhiController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oVq-KH-4sc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="leE-Dc-qGV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZE8-gN-e92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="759"/>
+        </scene>
+        <!--Block中使用变量-->
+        <scene sceneID="27O-nm-P7q">
+            <objects>
+                <viewController storyboardIdentifier="OtherUseController" title="Block中使用变量" id="EcA-ly-hKX" customClass="OtherUseController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UoE-E1-OXs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NiX-Q6-Pnk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DsD-Fo-iJs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="759"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_normal" width="16" height="16"/>
+        <image name="home_select" width="16" height="16"/>
+    </resources>
 </document>

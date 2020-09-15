@@ -22,6 +22,11 @@
 		3B8E5A44250EFCBC0063567F /* other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E5A43250EFCBC0063567F /* other.storyboard */; };
 		3B8E5A47250EFE8C0063567F /* SceneDelegate+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */; };
 		3BBC280C250FAA5500F696F4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC280B250FAA5500F696F4 /* BaseViewController.m */; };
+		3BD9BBFB25107BE400FAA5F8 /* JubuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9BBFA25107BE400FAA5F8 /* JubuController.m */; };
+		3BD9BBFE25107C0500FAA5F8 /* QuanjuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9BBFD25107C0500FAA5F8 /* QuanjuController.m */; };
+		3BD9BC0125107C2400FAA5F8 /* CanshuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9BC0025107C2400FAA5F8 /* CanshuController.m */; };
+		3BD9BC0425107C3100FAA5F8 /* FanhuizhiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9BC0325107C3100FAA5F8 /* FanhuizhiController.m */; };
+		3BD9BC0725107C6400FAA5F8 /* OtherUseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9BC0625107C6400FAA5F8 /* OtherUseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,16 @@
 		3B8E5A46250EFE8C0063567F /* SceneDelegate+Setup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SceneDelegate+Setup.m"; sourceTree = "<group>"; };
 		3BBC280A250FAA5500F696F4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		3BBC280B250FAA5500F696F4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3BD9BBF925107BE400FAA5F8 /* JubuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JubuController.h; sourceTree = "<group>"; };
+		3BD9BBFA25107BE400FAA5F8 /* JubuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JubuController.m; sourceTree = "<group>"; };
+		3BD9BBFC25107C0500FAA5F8 /* QuanjuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuanjuController.h; sourceTree = "<group>"; };
+		3BD9BBFD25107C0500FAA5F8 /* QuanjuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuanjuController.m; sourceTree = "<group>"; };
+		3BD9BBFF25107C2400FAA5F8 /* CanshuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanshuController.h; sourceTree = "<group>"; };
+		3BD9BC0025107C2400FAA5F8 /* CanshuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanshuController.m; sourceTree = "<group>"; };
+		3BD9BC0225107C3100FAA5F8 /* FanhuizhiController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanhuizhiController.h; sourceTree = "<group>"; };
+		3BD9BC0325107C3100FAA5F8 /* FanhuizhiController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanhuizhiController.m; sourceTree = "<group>"; };
+		3BD9BC0525107C6400FAA5F8 /* OtherUseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherUseController.h; sourceTree = "<group>"; };
+		3BD9BC0625107C6400FAA5F8 /* OtherUseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherUseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +198,16 @@
 			children = (
 				3B8E5A30250EFC000063567F /* HomeController.h */,
 				3B8E5A31250EFC000063567F /* HomeController.m */,
+				3BD9BBF925107BE400FAA5F8 /* JubuController.h */,
+				3BD9BBFA25107BE400FAA5F8 /* JubuController.m */,
+				3BD9BBFC25107C0500FAA5F8 /* QuanjuController.h */,
+				3BD9BBFD25107C0500FAA5F8 /* QuanjuController.m */,
+				3BD9BBFF25107C2400FAA5F8 /* CanshuController.h */,
+				3BD9BC0025107C2400FAA5F8 /* CanshuController.m */,
+				3BD9BC0225107C3100FAA5F8 /* FanhuizhiController.h */,
+				3BD9BC0325107C3100FAA5F8 /* FanhuizhiController.m */,
+				3BD9BC0525107C6400FAA5F8 /* OtherUseController.h */,
+				3BD9BC0625107C6400FAA5F8 /* OtherUseController.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -305,12 +330,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E5A26250EFA550063567F /* AppDelegate.m in Sources */,
+				3BD9BBFE25107C0500FAA5F8 /* QuanjuController.m in Sources */,
+				3BD9BC0725107C6400FAA5F8 /* OtherUseController.m in Sources */,
 				3BBC280C250FAA5500F696F4 /* BaseViewController.m in Sources */,
 				3B8E5A25250EFA550063567F /* SceneDelegate.m in Sources */,
 				3B8E5A38250EFC230063567F /* OtherController.m in Sources */,
 				3B8E5A2C250EFB7D0063567F /* WMNavgationController.m in Sources */,
+				3BD9BC0125107C2400FAA5F8 /* CanshuController.m in Sources */,
 				3B8E5A29250EFB550063567F /* WMTabbarController.m in Sources */,
 				3B8E5A32250EFC000063567F /* HomeController.m in Sources */,
+				3BD9BBFB25107BE400FAA5F8 /* JubuController.m in Sources */,
+				3BD9BC0425107C3100FAA5F8 /* FanhuizhiController.m in Sources */,
 				3B8E5A47250EFE8C0063567F /* SceneDelegate+Setup.m in Sources */,
 				3B8E5A12250EF6040063567F /* main.m in Sources */,
 				3B8E5A35250EFC130063567F /* MineController.m in Sources */,

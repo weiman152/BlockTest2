@@ -15,10 +15,10 @@
                     <view key="view" contentMode="scaleToFill" id="3Ox-aZ-dLt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cms-mq-wZV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的" id="bWh-Wg-Cmo"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="mine_normal" selectedImage="mine_select" id="bWh-Wg-Cmo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWO-Gt-PO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,4 +26,8 @@
             <point key="canvasLocation" x="70" y="108"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mine_normal" width="16" height="16"/>
+        <image name="mine_select" width="16" height="16"/>
+    </resources>
 </document>
