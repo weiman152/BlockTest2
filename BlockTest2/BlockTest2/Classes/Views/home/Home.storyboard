@@ -119,7 +119,27 @@
                     <view key="view" contentMode="scaleToFill" id="E10-mQ-adX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-t1-Gty">
+                                <rect key="frame" x="10" y="74" width="394" height="748"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="说明： 在这个VC中测试了Block作为局部变量的各种情况， 无参数，无返回值的Block， 有参数无返回值的Block， 有参数有返回值的Block， Block赋值等。 在ARC下，局部变量的Block没有访问外部变量，都是全局区Block。">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YFq-CL-7HZ" firstAttribute="trailing" secondItem="EP2-t1-Gty" secondAttribute="trailing" constant="10" id="7G7-W0-LuH"/>
+                            <constraint firstItem="YFq-CL-7HZ" firstAttribute="bottom" secondItem="EP2-t1-Gty" secondAttribute="bottom" constant="40" id="aAm-Qj-AGZ"/>
+                            <constraint firstItem="EP2-t1-Gty" firstAttribute="top" secondItem="YFq-CL-7HZ" secondAttribute="top" constant="30" id="gzW-YP-HEu"/>
+                            <constraint firstItem="EP2-t1-Gty" firstAttribute="leading" secondItem="YFq-CL-7HZ" secondAttribute="leading" constant="10" id="rcz-ks-5Y5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YFq-CL-7HZ"/>
                     </view>
                 </viewController>
@@ -134,13 +154,93 @@
                     <view key="view" contentMode="scaleToFill" id="Srk-xP-CrX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="说明： Block作为全局变量，经常作为属性使用。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd9-td-tza">
+                                <rect key="frame" x="20" y="74" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I4E-BS-CVU">
+                                <rect key="frame" x="150" y="145" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入整数n=" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDa-wd-n2Q">
+                                <rect key="frame" x="20" y="151.5" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="q0N-6g-qjl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果sum=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVL-S1-gmr">
+                                <rect key="frame" x="62" y="202.5" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8Y-iS-Uqx">
+                                <rect key="frame" x="150" y="203" width="244" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.090196078430000007" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-5b-8OK">
+                                <rect key="frame" x="145" y="253.5" width="124" height="30"/>
+                                <state key="normal" title="test1--输出字符串"/>
+                                <connections>
+                                    <action selector="test1:" destination="kPJ-yY-o0o" eventType="touchUpInside" id="q4C-8X-e4Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19R-v8-AXw">
+                                <rect key="frame" x="144" y="303.5" width="126" height="30"/>
+                                <state key="normal" title="test2--求1到n的和"/>
+                                <connections>
+                                    <action selector="test2:" destination="kPJ-yY-o0o" eventType="touchUpInside" id="CTb-H2-wkA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoe-5B-6Cp">
+                                <rect key="frame" x="141" y="353.5" width="132" height="30"/>
+                                <state key="normal" title="test3--求n的阶乘n!"/>
+                                <connections>
+                                    <action selector="test3:" destination="kPJ-yY-o0o" eventType="touchUpInside" id="358-8F-apB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="l8Y-iS-Uqx" firstAttribute="leading" secondItem="I4E-BS-CVU" secondAttribute="leading" id="8Py-As-ZCG"/>
+                            <constraint firstItem="19R-v8-AXw" firstAttribute="top" secondItem="Hwi-5b-8OK" secondAttribute="bottom" constant="20" id="B81-40-DXj"/>
+                            <constraint firstItem="I4E-BS-CVU" firstAttribute="centerY" secondItem="SDa-wd-n2Q" secondAttribute="centerY" id="BbM-qJ-W7d"/>
+                            <constraint firstItem="Xd9-td-tza" firstAttribute="top" secondItem="erU-6s-Ece" secondAttribute="top" constant="30" id="EYT-qU-ykm"/>
+                            <constraint firstItem="SDa-wd-n2Q" firstAttribute="leading" secondItem="erU-6s-Ece" secondAttribute="leading" constant="20" id="F1k-At-bTb"/>
+                            <constraint firstItem="Hwi-5b-8OK" firstAttribute="top" secondItem="l8Y-iS-Uqx" secondAttribute="bottom" constant="30" id="G8T-bc-xmH"/>
+                            <constraint firstItem="erU-6s-Ece" firstAttribute="trailing" secondItem="Xd9-td-tza" secondAttribute="trailing" constant="20" id="KUj-3Z-JH0"/>
+                            <constraint firstItem="JVL-S1-gmr" firstAttribute="trailing" secondItem="SDa-wd-n2Q" secondAttribute="trailing" id="LEa-z1-2XM"/>
+                            <constraint firstItem="19R-v8-AXw" firstAttribute="centerX" secondItem="erU-6s-Ece" secondAttribute="centerX" id="R6I-bs-swz"/>
+                            <constraint firstItem="I4E-BS-CVU" firstAttribute="leading" secondItem="SDa-wd-n2Q" secondAttribute="trailing" constant="10" id="Rf9-2Y-SGg"/>
+                            <constraint firstItem="I4E-BS-CVU" firstAttribute="top" secondItem="Xd9-td-tza" secondAttribute="bottom" constant="30" id="aHN-tp-j0F"/>
+                            <constraint firstItem="JVL-S1-gmr" firstAttribute="top" secondItem="SDa-wd-n2Q" secondAttribute="bottom" constant="30" id="dik-Gf-Ses"/>
+                            <constraint firstItem="Hwi-5b-8OK" firstAttribute="centerX" secondItem="erU-6s-Ece" secondAttribute="centerX" id="fOa-zV-ghX"/>
+                            <constraint firstItem="l8Y-iS-Uqx" firstAttribute="trailing" secondItem="I4E-BS-CVU" secondAttribute="trailing" id="kmz-5F-8ch"/>
+                            <constraint firstItem="Xd9-td-tza" firstAttribute="leading" secondItem="erU-6s-Ece" secondAttribute="leading" constant="20" id="spN-v2-Pex"/>
+                            <constraint firstItem="aoe-5B-6Cp" firstAttribute="top" secondItem="19R-v8-AXw" secondAttribute="bottom" constant="20" id="tGP-EI-IAX"/>
+                            <constraint firstItem="l8Y-iS-Uqx" firstAttribute="centerY" secondItem="JVL-S1-gmr" secondAttribute="centerY" id="trq-Z1-68w"/>
+                            <constraint firstItem="aoe-5B-6Cp" firstAttribute="centerX" secondItem="erU-6s-Ece" secondAttribute="centerX" id="xtz-zt-IMb"/>
+                            <constraint firstItem="erU-6s-Ece" firstAttribute="trailing" secondItem="I4E-BS-CVU" secondAttribute="trailing" constant="20" id="zAQ-sC-Dkt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="erU-6s-Ece"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="I4E-BS-CVU" id="VU7-B5-gIB"/>
+                        <outlet property="resultLabel" destination="l8Y-iS-Uqx" id="jDA-76-yS8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zQq-P7-f3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555" y="73"/>
+            <point key="canvasLocation" x="1553.6231884057972" y="72.991071428571431"/>
         </scene>
         <!--作为参数-->
         <scene sceneID="Dtm-NX-08T">
