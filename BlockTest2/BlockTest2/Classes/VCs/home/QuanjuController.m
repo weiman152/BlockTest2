@@ -74,7 +74,24 @@ typedef NSInteger (^JieCBlock)(NSInteger);
 }
 
 - (IBAction)test3:(id)sender {
-    
+    self.blockj = ^NSInteger(NSInteger n) {
+        NSLog(@"%ld!是：",n);
+        NSInteger result = 1;
+        while (n>0) {
+            result *= n;
+            n--;
+        }
+        return result;
+    };
+    //调用
+    if(self.blockj){
+        if(self.inputTextField.text.length>0){
+            NSInteger n = self.inputTextField.text.integerValue;
+            NSInteger jc = self.blockj(n);
+            NSLog(@"%ld",jc);
+            self.resultLabel.text = [NSString stringWithFormat:@"%ld", jc];
+        }
+    }
 }
 
 @end
