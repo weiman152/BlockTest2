@@ -249,13 +249,55 @@
                     <view key="view" contentMode="scaleToFill" id="0ob-l7-Nfl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block作为函数参数也是很常见的，例如网络请求的返回值。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-0y-f08">
+                                <rect key="frame" x="20" y="84" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlL-2e-6UA">
+                                <rect key="frame" x="83" y="165" width="248" height="30"/>
+                                <state key="normal" title="案例1:有参数有返回值block作为参数"/>
+                                <connections>
+                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="HVI-OX-1jr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2o1-uG-w2h">
+                                <rect key="frame" x="148.5" y="265" width="117" height="30"/>
+                                <state key="normal" title="案例3：网络请求"/>
+                                <connections>
+                                    <action selector="test3:" destination="7WA-he-igj" eventType="touchUpInside" id="KHb-gd-cns"/>
+                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="tjk-Uq-WVL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-Zr-70V">
+                                <rect key="frame" x="82" y="215" width="250" height="30"/>
+                                <state key="normal" title="案例2:有参数无返回值block作为参数"/>
+                                <connections>
+                                    <action selector="test2:" destination="7WA-he-igj" eventType="touchUpInside" id="W40-Zw-9mg"/>
+                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="LQ7-mJ-FMV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MUZ-Zr-70V" firstAttribute="centerX" secondItem="7cc-ee-kYF" secondAttribute="centerX" id="1Xp-82-b4B"/>
+                            <constraint firstItem="2o1-uG-w2h" firstAttribute="centerX" secondItem="7cc-ee-kYF" secondAttribute="centerX" id="6gf-h0-Rzo"/>
+                            <constraint firstItem="MUZ-Zr-70V" firstAttribute="top" secondItem="GlL-2e-6UA" secondAttribute="bottom" constant="20" id="Gbx-II-gbk"/>
+                            <constraint firstItem="Wit-0y-f08" firstAttribute="top" secondItem="7cc-ee-kYF" secondAttribute="top" constant="40" id="aDm-9c-0uE"/>
+                            <constraint firstItem="2o1-uG-w2h" firstAttribute="top" secondItem="MUZ-Zr-70V" secondAttribute="bottom" constant="20" id="iGp-VB-QbA"/>
+                            <constraint firstItem="GlL-2e-6UA" firstAttribute="top" secondItem="Wit-0y-f08" secondAttribute="bottom" constant="40" id="u7z-76-UcA"/>
+                            <constraint firstItem="GlL-2e-6UA" firstAttribute="centerX" secondItem="7cc-ee-kYF" secondAttribute="centerX" id="ufG-QN-7OA"/>
+                            <constraint firstItem="Wit-0y-f08" firstAttribute="leading" secondItem="7cc-ee-kYF" secondAttribute="leading" constant="20" id="v5g-c2-MQC"/>
+                            <constraint firstItem="7cc-ee-kYF" firstAttribute="trailing" secondItem="Wit-0y-f08" secondAttribute="trailing" constant="20" id="vj9-3b-q7X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7cc-ee-kYF"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9La-3W-e8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2304" y="73"/>
+            <point key="canvasLocation" x="2302.898550724638" y="72.991071428571431"/>
         </scene>
         <!--作为返回值-->
         <scene sceneID="pLB-Wo-amb">

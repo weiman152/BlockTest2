@@ -92,6 +92,9 @@ typedef NSInteger (^JieCBlock)(NSInteger);
             self.resultLabel.text = [NSString stringWithFormat:@"%ld", jc];
         }
     }
+    //<__NSGlobalBlock__: 0x10215d148>
+    NSLog(@"%@",self.blockj);
 }
+
 
 @end
