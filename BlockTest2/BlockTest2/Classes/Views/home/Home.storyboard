@@ -304,13 +304,58 @@
                     <view key="view" contentMode="scaleToFill" id="oVq-KH-4sc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block作为函数的返回值，由于Block的类型比较长，为了方便阅读，还是应该使用类型别名." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecB-PF-MDU">
+                                <rect key="frame" x="20" y="84" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61K-sA-jDC">
+                                <rect key="frame" x="132" y="165" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="W5a-Ru-Nae"/>
+                                    <constraint firstAttribute="height" constant="50" id="rkP-sb-Qwy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="test1">
+                                    <color key="titleColor" red="0.40322289928578681" green="0.061851535011986168" blue="0.22312500340193381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="test1:" destination="QmH-1y-X08" eventType="touchUpInside" id="X87-hU-A5b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suN-X5-0fW">
+                                <rect key="frame" x="132" y="255" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="test2">
+                                    <color key="titleColor" red="0.40322289928578681" green="0.061851535011986168" blue="0.22312500340193381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="test2:" destination="QmH-1y-X08" eventType="touchUpInside" id="0Wh-Kd-iaw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="suN-X5-0fW" firstAttribute="width" secondItem="61K-sA-jDC" secondAttribute="width" id="2fX-Zq-Cxm"/>
+                            <constraint firstItem="ecB-PF-MDU" firstAttribute="leading" secondItem="leE-Dc-qGV" secondAttribute="leading" constant="20" id="9Oh-aw-Ie9"/>
+                            <constraint firstItem="61K-sA-jDC" firstAttribute="centerX" secondItem="leE-Dc-qGV" secondAttribute="centerX" id="ADj-E0-OyF"/>
+                            <constraint firstItem="leE-Dc-qGV" firstAttribute="trailing" secondItem="ecB-PF-MDU" secondAttribute="trailing" constant="20" id="INd-Va-twt"/>
+                            <constraint firstItem="suN-X5-0fW" firstAttribute="top" secondItem="61K-sA-jDC" secondAttribute="bottom" constant="40" id="J3Y-xF-ZKn"/>
+                            <constraint firstItem="suN-X5-0fW" firstAttribute="centerX" secondItem="leE-Dc-qGV" secondAttribute="centerX" id="OJv-IG-cJS"/>
+                            <constraint firstItem="suN-X5-0fW" firstAttribute="height" secondItem="61K-sA-jDC" secondAttribute="height" id="UHW-MM-zFp"/>
+                            <constraint firstItem="ecB-PF-MDU" firstAttribute="top" secondItem="leE-Dc-qGV" secondAttribute="top" constant="40" id="iYj-1S-5a2"/>
+                            <constraint firstItem="61K-sA-jDC" firstAttribute="top" secondItem="ecB-PF-MDU" secondAttribute="bottom" constant="40" id="k1L-1C-ST8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="leE-Dc-qGV"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZE8-gN-e92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="759"/>
+            <point key="canvasLocation" x="121.73913043478262" y="758.70535714285711"/>
         </scene>
         <!--Block中使用变量-->
         <scene sceneID="27O-nm-P7q">
