@@ -260,7 +260,7 @@
                                 <rect key="frame" x="83" y="165" width="248" height="30"/>
                                 <state key="normal" title="案例1:有参数有返回值block作为参数"/>
                                 <connections>
-                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="HVI-OX-1jr"/>
+                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="Kot-iQ-Olb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2o1-uG-w2h">
@@ -268,7 +268,6 @@
                                 <state key="normal" title="案例3：网络请求"/>
                                 <connections>
                                     <action selector="test3:" destination="7WA-he-igj" eventType="touchUpInside" id="KHb-gd-cns"/>
-                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="tjk-Uq-WVL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-Zr-70V">
@@ -276,7 +275,6 @@
                                 <state key="normal" title="案例2:有参数无返回值block作为参数"/>
                                 <connections>
                                     <action selector="test2:" destination="7WA-he-igj" eventType="touchUpInside" id="W40-Zw-9mg"/>
-                                    <action selector="test:" destination="7WA-he-igj" eventType="touchUpInside" id="LQ7-mJ-FMV"/>
                                 </connections>
                             </button>
                         </subviews>
