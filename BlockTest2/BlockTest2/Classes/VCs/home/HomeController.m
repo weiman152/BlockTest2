@@ -25,7 +25,7 @@
 }
 
 +(instancetype)instance {
-    HomeController *home = [HomeController instanceWithBoard:@"Home" identifer:@"HomeController"];
+    HomeController *home = [HomeController instanceWithStoryBoard:@"Home"];
     return home;
 }
 

@@ -20,7 +20,7 @@
 }
 
 +(id)instance{
-    JubuController * jubu = [JubuController instanceWithBoard:@"Home" identifer:@"JubuController"];
+    JubuController * jubu = [JubuController instanceWithStoryBoard:@"Home"];
     return jubu;
 }
 

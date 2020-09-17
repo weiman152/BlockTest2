@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
 
-+(id)instanceWithBoard:(NSString *)name identifer:(NSString *)identifer;
-//声明实例化方法，在各个子类中自己实现
++(id)instanceWithStoryBoard:(NSString *)name;
+//只有声明，各个子类自己实现
 +(id)instance;
 
 @end

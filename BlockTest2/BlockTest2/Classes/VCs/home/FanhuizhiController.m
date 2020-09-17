@@ -23,7 +23,7 @@ typedef NSInteger (^Test2)(NSInteger);
 }
 
 +(id)instance{
-    FanhuizhiController * vc = [FanhuizhiController instanceWithBoard:@"Home" identifer:@"FanhuizhiController"];
+    FanhuizhiController * vc = [FanhuizhiController instanceWithStoryBoard:@"Home"];
     return vc;
 }
 

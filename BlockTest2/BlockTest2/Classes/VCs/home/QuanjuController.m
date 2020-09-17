@@ -32,7 +32,7 @@ typedef NSInteger (^JieCBlock)(NSInteger);
 }
 
 +(id)instance{
-    QuanjuController * vc = [QuanjuController instanceWithBoard:@"Home" identifer:@"QuanjuController"];
+    QuanjuController * vc = [QuanjuController instanceWithStoryBoard:@"Home"];
     return vc;
 }
 

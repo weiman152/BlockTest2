@@ -20,7 +20,7 @@
 }
 
 +(instancetype)instance {
-    OtherController *other = [OtherController instanceWithBoard:@"other" identifer:@"OtherController"];
+    OtherController *other = [OtherController instanceWithStoryBoard:@"other"];
     return other;
 }
 

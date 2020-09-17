@@ -23,7 +23,7 @@ typedef void (^FailBlock)(int, NSString *);
 }
 
 +(id)instance{
-    CanshuController * vc = [CanshuController instanceWithBoard:@"Home" identifer:@"CanshuController"];
+    CanshuController * vc = [CanshuController instanceWithStoryBoard:@"Home"];
     return vc;
 }
 

@@ -20,7 +20,7 @@
 }
 
 +(instancetype)instance {
-    MineController *mine = [MineController instanceWithBoard:@"mine" identifer:@"MineController"];
+    MineController *mine = [MineController instanceWithStoryBoard:@"mine"];
     return mine;
 }
 

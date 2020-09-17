@@ -20,7 +20,7 @@
 }
 
 +(id)instance{
-    OtherUseController * vc = [OtherUseController instanceWithBoard:@"Home" identifer:@"OtherUseController"];
+    OtherUseController * vc = [OtherUseController instanceWithStoryBoard:@"Home"];
     return vc;
 }
 

@@ -19,10 +19,14 @@
     // Do any additional setup after loading the view.
 }
 
-+(id)instanceWithBoard:(NSString *)name identifer:(NSString *)identifer{
++(id)instanceWithStoryBoard:(NSString *)name{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:0];
-    BaseViewController * myVC = [storyboard instantiateViewControllerWithIdentifier:identifer];
+    BaseViewController * myVC = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([self class])];
     return myVC;
+}
+
++(id)instance {
+    return self;
 }
 
 @end
